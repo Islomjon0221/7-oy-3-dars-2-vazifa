@@ -82,7 +82,7 @@ function App() {
   }
 
   return (
-    <div className='container bg-[#0d0714] text-white w-full h-full mx-auto'>
+    <div className='bg-[#0d0714] text-white w-full h-full mx-auto'>
       <form onSubmit={handleClick} className='w-[432px] items-center mb-[59px] pt-[159px] mx-auto flex'>
         <input ref={name} type="text" className={`rounded-[10px] w-[381px] mr-[11px] h-[40px] bg-transparent py-[11px] font-normal placeholder:text-[16px] placeholder:leading-[19.36px] px-[15px] ${userErr == true ? "border-red-700" : "border-[#3E1671]"} mt-[10px] border-[1px] focus:outline-none placeholder:text-[#777777]`} placeholder='Add a new task' />
         <button className='transition duration-200 mt-[10px] hover:opacity-[80%]'><img src={buttonPlus} alt="add button" /></button>
